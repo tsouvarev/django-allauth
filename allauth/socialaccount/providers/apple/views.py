@@ -131,7 +131,7 @@ class AppleOAuth2Adapter(OAuth2Adapter):
         return {
             **access_token_data,
             **self.get_user_scope_data(request),
-            "id_token":request.apple_login_session.get("id_token")
+            # "id_token":request.apple_login_session.get("id_token")
         }
 
 
